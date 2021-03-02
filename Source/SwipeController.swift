@@ -115,7 +115,8 @@ class SwipeController: NSObject {
             if let expansionStyle = actionsView.options.expansionStyle, let scrollView = scrollView {
                 
                 let referenceFrame = actionsContainerView != swipeable ? actionsContainerView.frame : nil;
-                let expanded = expansionStyle.shouldExpand(view: swipeable, gesture: gesture, in: scrollView, within: referenceFrame)
+//                let expanded = expansionStyle.shouldExpand(view: swipeable, gesture: gesture, in: scrollView, within: referenceFrame)
+                let expanded = true
                 let targetOffset = expansionStyle.targetOffset(for: swipeable)
                 let currentOffset = abs(translation + originalCenter - swipeable.bounds.midX)
                 
